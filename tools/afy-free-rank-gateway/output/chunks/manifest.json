@@ -2,6 +2,7 @@
   "runId": "AFY_BATCH_PRODUCTION_20260820_R1",
   "totalCandidates": 455,
   "chunkSize": 20,
+  "sheetAll": "sheet-all.csv",
   "chunks": [
     {
       "file": "candidates-001.json",
