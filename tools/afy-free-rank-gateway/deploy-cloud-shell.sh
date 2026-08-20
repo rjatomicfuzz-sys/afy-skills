@@ -2,6 +2,7 @@
 set -euo pipefail
 
 GCP_PROJECT="big-command-495016-i9"
+REQUIRED_ACCOUNT="hello@automaticforyou.com"
 VERCEL_SCOPE="rjatomicfuzz-7072s-projects"
 VERCEL_PROJECT="afy-free-rank-gateway"
 STABLE_URL="https://afy-free-rank-gateway.vercel.app"
@@ -22,32 +23,35 @@ echo "== AFY FREE RANK GATEWAY DEPLOY =="
 echo "Google project: $GCP_PROJECT"
 echo "Vercel project: $VERCEL_PROJECT"
 
+ACTIVE_ACCOUNT="$(gcloud auth list --filter=status:ACTIVE --format='value(account)' | head -n1)"
+if [[ "$ACTIVE_ACCOUNT" != "$REQUIRED_ACCOUNT" ]]; then
+  echo "ERROR: active Google account must be $REQUIRED_ACCOUNT"
+  echo "Current active account: ${ACTIVE_ACCOUNT:-NONE}"
+  exit 1
+fi
+
 gcloud config set project "$GCP_PROJECT" >/dev/null
 
 echo
-echo "Active Google account:"
-gcloud auth list --filter=status:ACTIVE --format="value(account)"
+echo "Active Google account: $ACTIVE_ACCOUNT"
 
 echo
 echo "Enabling Places API + API Keys API..."
 gcloud services enable places.googleapis.com apikeys.googleapis.com --project="$GCP_PROJECT" --quiet >/dev/null 2>&1
 
-OLD_KEYS="$(gcloud services api-keys list --project="$GCP_PROJECT" --filter="displayName='$KEY_DISPLAY'" --format="value(name)")"
-if [[ -n "$OLD_KEYS" ]]; then
-  echo "Rotating dedicated Places-only key..."
-  while IFS= read -r key_resource; do
-    [[ -z "$key_resource" ]] && continue
-    gcloud services api-keys delete "$key_resource" --project="$GCP_PROJECT" --quiet >/dev/null 2>&1 || true
-  done <<< "$OLD_KEYS"
-fi
-
-echo "Creating fresh dedicated Places-only API key..."
-gcloud services api-keys create --project="$GCP_PROJECT" --display-name="$KEY_DISPLAY" --api-target=service=places.googleapis.com --quiet >/dev/null 2>&1
 KEY_RESOURCE="$(gcloud services api-keys list --project="$GCP_PROJECT" --filter="displayName='$KEY_DISPLAY'" --format="value(name)" | head -n1)"
-[[ -n "$KEY_RESOURCE" ]] || { echo "ERROR: could not locate fresh API key resource after creation."; exit 1; }
+if [[ -z "$KEY_RESOURCE" ]]; then
+  echo "Creating dedicated Places-only API key..."
+  gcloud services api-keys create --project="$GCP_PROJECT" --display-name="$KEY_DISPLAY" --api-target=service=places.googleapis.com --quiet >/dev/null 2>&1
+  KEY_RESOURCE="$(gcloud services api-keys list --project="$GCP_PROJECT" --filter="displayName='$KEY_DISPLAY'" --format="value(name)" | head -n1)"
+else
+  echo "Reusing dedicated key and re-applying Places-only restriction..."
+  gcloud services api-keys update "$KEY_RESOURCE" --project="$GCP_PROJECT" --api-target=service=places.googleapis.com --quiet >/dev/null 2>&1
+fi
+[[ -n "$KEY_RESOURCE" ]] || { echo "ERROR: could not locate API key resource."; exit 1; }
 KEY_STRING="$(gcloud services api-keys get-key-string "$KEY_RESOURCE" --project="$GCP_PROJECT" --format="value(keyString)" 2>/dev/null)"
 [[ -n "$KEY_STRING" ]] || { echo "ERROR: could not retrieve API key string."; exit 1; }
-echo "Fresh Google key ready and restricted to Places API. Secret not printed."
+echo "Google key ready and restricted to Places API. Secret not printed."
 
 rm -rf "$WORKDIR"
 git clone --depth 1 "$REPO_URL" "$WORKDIR" >/dev/null 2>&1
@@ -72,12 +76,16 @@ npx --yes vercel@latest deploy --prod --yes --scope "$VERCEL_SCOPE"
 
 echo
 echo "Waiting for stable production alias..."
-for i in {1..20}; do
-  if curl -fsS "$STABLE_URL/api/health" >/tmp/afy-health.json 2>/dev/null; then
+HEALTH_OK=0
+for i in {1..30}; do
+  STATUS="$(curl -sS -o /tmp/afy-health.json -w '%{http_code}' "$STABLE_URL/api/health" || true)"
+  if [[ "$STATUS" == "200" ]] && grep -q '"ok":true' /tmp/afy-health.json; then
+    HEALTH_OK=1
     break
   fi
   sleep 2
 done
+[[ "$HEALTH_OK" == "1" ]] || { echo "ERROR: stable health route did not become ready."; cat /tmp/afy-health.json 2>/dev/null || true; exit 1; }
 
 echo
 echo "HEALTH TEST"
@@ -90,7 +98,21 @@ curl -fsS --get --data-urlencode "q=electrician in Clay County, Illinois" "$STAB
 
 echo
 echo "PRO IDENTITY TEST"
-curl -fsS --get --data-urlencode "q=electrician in Clay County, Illinois" "$STABLE_URL/api/identity-pro" | python3 -m json.tool
+PRO_OK=0
+for i in {1..30}; do
+  STATUS="$(curl -sS -o /tmp/afy-pro.json -w '%{http_code}' --get --data-urlencode "q=electrician in Clay County, Illinois" "$STABLE_URL/api/identity-pro" || true)"
+  if [[ "$STATUS" == "200" ]] && grep -q '"ok":true' /tmp/afy-pro.json; then
+    PRO_OK=1
+    break
+  fi
+  sleep 2
+done
+if [[ "$PRO_OK" != "1" ]]; then
+  echo "ERROR: Pro identity route did not become ready. Last HTTP status: $STATUS"
+  cat /tmp/afy-pro.json 2>/dev/null || true
+  exit 1
+fi
+python3 -m json.tool < /tmp/afy-pro.json
 
 echo
 echo "AFY FREE RANK GATEWAY DEPLOY COMPLETE"
