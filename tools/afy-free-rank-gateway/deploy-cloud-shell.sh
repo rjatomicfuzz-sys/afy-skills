@@ -89,5 +89,9 @@ echo "IDS-ONLY TEST"
 curl -fsS --get --data-urlencode "q=electrician in Clay County, Illinois" "$STABLE_URL/api/rank-ids" | python3 -m json.tool
 
 echo
+echo "PRO IDENTITY TEST"
+curl -fsS --get --data-urlencode "q=electrician in Clay County, Illinois" "$STABLE_URL/api/identity-pro" | python3 -m json.tool
+
+echo
 echo "AFY FREE RANK GATEWAY DEPLOY COMPLETE"
 echo "URL: $STABLE_URL"
