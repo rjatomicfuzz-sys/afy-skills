@@ -8,6 +8,30 @@ const data = JSON.parse(fs.readFileSync(input, 'utf8'));
 if (!Array.isArray(data.candidates)) throw new Error('candidates missing');
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir, { recursive: true });
+
+const STATE_CODES = Object.freeze({
+  Alabama: 'AL', Alaska: 'AK', Arizona: 'AZ', Arkansas: 'AR', California: 'CA', Colorado: 'CO',
+  Connecticut: 'CT', Delaware: 'DE', Florida: 'FL', Georgia: 'GA', Hawaii: 'HI', Idaho: 'ID',
+  Illinois: 'IL', Indiana: 'IN', Iowa: 'IA', Kansas: 'KS', Kentucky: 'KY', Louisiana: 'LA',
+  Maine: 'ME', Maryland: 'MD', Massachusetts: 'MA', Michigan: 'MI', Minnesota: 'MN', Mississippi: 'MS',
+  Missouri: 'MO', Montana: 'MT', Nebraska: 'NE', Nevada: 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ',
+  'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND', Ohio: 'OH',
+  Oklahoma: 'OK', Oregon: 'OR', Pennsylvania: 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC',
+  'South Dakota': 'SD', Tennessee: 'TN', Texas: 'TX', Utah: 'UT', Vermont: 'VT', Virginia: 'VA',
+  Washington: 'WA', 'West Virginia': 'WV', Wisconsin: 'WI', Wyoming: 'WY', 'District of Columbia': 'DC'
+});
+
+function hasCorrectState(candidate) {
+  const expected = STATE_CODES[candidate?.state];
+  const actual = String(candidate?.stateCode || '').toUpperCase();
+  return Boolean(expected && actual && expected === actual);
+}
+
+const preGeoCandidates = data.candidates.length;
+const geoExcludedRecords = data.candidates.filter(c => !hasCorrectState(c));
+const candidates = data.candidates.filter(hasCorrectState);
+fs.writeFileSync(path.join(outDir, 'geo-excluded.json'), JSON.stringify(geoExcludedRecords, null, 2) + '\n');
+
 const fields = ['countyIndex','fips','state','sourceCounty','sourcePopulation','businessName','placeId','countyRank','countyResultCount','city','liveAddress'];
 const chunks = [];
 
@@ -39,8 +63,8 @@ function sheetRow(r, globalIndex) {
 }
 
 const allSheetRows = [];
-for (let i = 0; i < data.candidates.length; i += chunkSize) {
-  const rows = data.candidates.slice(i, i + chunkSize).map(c => Object.fromEntries(fields.map(f => [f, c[f] ?? null])));
+for (let i = 0; i < candidates.length; i += chunkSize) {
+  const rows = candidates.slice(i, i + chunkSize).map(c => Object.fromEntries(fields.map(f => [f, c[f] ?? null])));
   const seq = String(chunks.length + 1).padStart(3,'0');
   const jsonFile = `candidates-${seq}.json`;
   const csvFile = `sheet-${seq}.csv`;
@@ -51,6 +75,15 @@ for (let i = 0; i < data.candidates.length; i += chunkSize) {
   chunks.push({ file: jsonFile, csvFile, start: i + 1, end: i + rows.length, count: rows.length });
 }
 fs.writeFileSync(path.join(outDir, 'sheet-all.csv'), allSheetRows.join('\n') + '\n');
-const manifest = { runId: data.runId, totalCandidates: data.candidates.length, chunkSize, sheetAll: 'sheet-all.csv', chunks };
+const manifest = {
+  runId: data.runId,
+  preGeoCandidates,
+  geoExcluded: geoExcludedRecords.length,
+  totalCandidates: candidates.length,
+  chunkSize,
+  sheetAll: 'sheet-all.csv',
+  geoExcludedFile: 'geo-excluded.json',
+  chunks
+};
 fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 console.log(JSON.stringify(manifest, null, 2));
