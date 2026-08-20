@@ -1,0 +1,11 @@
+{
+  "runId": "AFY_BATCH_PILOT_20260820",
+  "countyFile": "tools/afy-free-rank-gateway/batch-pilot-counties.json",
+  "outputFile": "tools/afy-free-rank-gateway/output/latest.json",
+  "summaryFile": "tools/afy-free-rank-gateway/output/summary.json",
+  "gatewayBase": "https://afy-free-rank-gateway.vercel.app",
+  "targetCandidates": 100,
+  "maxPageEvents": 18,
+  "concurrency": 1,
+  "skipStates": []
+}
