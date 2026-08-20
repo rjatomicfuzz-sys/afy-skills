@@ -21,6 +21,13 @@ jobs:
           node-version: '22'
       - name: Chunk current batch output
         run: node tools/afy-free-rank-gateway/chunk-output.mjs tools/afy-free-rank-gateway/output/latest.json tools/afy-free-rank-gateway/output/chunks 20
+      - name: Publish Sheet CSV artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: afy-sheet-all
+          path: tools/afy-free-rank-gateway/output/chunks/sheet-all.csv
+          if-no-files-found: error
+          retention-days: 7
       - name: Persist chunks
         run: |
           git config user.name 'afy-batch-bot'
