@@ -21,7 +21,7 @@ function sheetRow(r, globalIndex) {
     `BATCH-R1-${String(globalIndex).padStart(4,'0')}`,
     data.runId,
     r.countyIndex,
-    r.fips,
+    `'${String(r.fips || '').padStart(5,'0')}`,
     r.state,
     r.sourceCounty,
     r.sourcePopulation,
