@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-GCP_PROJECT="afy-rankings"
+GCP_PROJECT="big-command-495016-i9"
 VERCEL_SCOPE="rjatomicfuzz-7072s-projects"
 VERCEL_PROJECT="afy-free-rank-gateway"
 KEY_DISPLAY="AFY Free Rank Gateway - Places IDs Only"
