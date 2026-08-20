@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 211,
-    "fips": "08043",
-    "state": "Colorado",
-    "sourceCounty": "Fremont",
-    "sourcePopulation": 50039,
-    "businessName": "Brookside Electric",
-    "placeId": "ChIJuZIfod2FFIcRwfrZ4RrveHA",
-    "countyRank": 39,
-    "countyResultCount": 60,
-    "city": "Cañon City",
-    "liveAddress": "1732 Willow St, Cañon City, CO 81212"
-  },
-  {
     "countyIndex": 111,
     "fips": "05029",
     "state": "Arkansas",
@@ -258,5 +245,18 @@
     "countyResultCount": 60,
     "city": "Wellington",
     "liveAddress": "13316 US-431, Wellington, AL 36279"
+  },
+  {
+    "countyIndex": 265,
+    "fips": "12055",
+    "state": "Florida",
+    "sourceCounty": "Highlands",
+    "sourcePopulation": 111122,
+    "businessName": "Amp Check Electric",
+    "placeId": "ChIJYZ2bf6pn3IgR5RWYJxSCOGI",
+    "countyRank": 35,
+    "countyResultCount": 60,
+    "city": "Lake Placid",
+    "liveAddress": "444 Garfield Ave NE, Lake Placid, FL 33852"
   }
 ]

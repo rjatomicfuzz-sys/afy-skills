@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 158,
-    "fips": "05125",
-    "state": "Arkansas",
-    "sourceCounty": "Saline",
-    "sourcePopulation": 133288,
-    "businessName": "Elliott Electrical, Inc.",
-    "placeId": "ChIJw8PwEiRSzYcRUE_CrL4m_DY",
-    "countyRank": 26,
-    "countyResultCount": 60,
-    "city": "Bryant",
-    "liveAddress": "22095 I-30 Bldg 300, Bryant, AR 72022"
-  },
-  {
     "countyIndex": 184,
     "fips": "06055",
     "state": "California",
@@ -258,5 +245,18 @@
     "countyResultCount": 60,
     "city": "Napa",
     "liveAddress": "1700 2nd St, Napa, CA 94559"
+  },
+  {
+    "countyIndex": 176,
+    "fips": "06023",
+    "state": "California",
+    "sourceCounty": "Humboldt",
+    "sourcePopulation": 131647,
+    "businessName": "Scurfield Electric, Heating & Solar",
+    "placeId": "ChIJER8n6whX0VQRxBVIXZ8h9y4",
+    "countyRank": 24,
+    "countyResultCount": 60,
+    "city": "Arcata",
+    "liveAddress": "550 S G St Ste 14, Arcata, CA 95521"
   }
 ]

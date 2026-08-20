@@ -1,57 +1,5 @@
 [
   {
-    "countyIndex": 265,
-    "fips": "12055",
-    "state": "Florida",
-    "sourceCounty": "Highlands",
-    "sourcePopulation": 111122,
-    "businessName": "Current Electric",
-    "placeId": "ChIJI_s3Fqtb3IgRzta21Tz4KXE",
-    "countyRank": 6,
-    "countyResultCount": 60,
-    "city": "Sebring",
-    "liveAddress": "4403 Persian Terrace, Sebring, FL 33875"
-  },
-  {
-    "countyIndex": 34,
-    "fips": "01069",
-    "state": "Alabama",
-    "sourceCounty": "Houston",
-    "sourcePopulation": 110318,
-    "businessName": "Vinson Plumbing & Electric",
-    "placeId": "ChIJ7XduFkyNkogRmhud5Uh8SAk",
-    "countyRank": 6,
-    "countyResultCount": 60,
-    "city": "Dothan",
-    "liveAddress": "634 S Shady Ln, Dothan, AL 36301"
-  },
-  {
-    "countyIndex": 289,
-    "fips": "13013",
-    "state": "Georgia",
-    "sourceCounty": "Barrow",
-    "sourcePopulation": 99773,
-    "businessName": "CDT Electric",
-    "placeId": "ChIJ4yRrWMdb9IgRYEwhbrf9bGM",
-    "countyRank": 6,
-    "countyResultCount": 60,
-    "city": "Bethlehem",
-    "liveAddress": "1234 Cabin Bridge Rd, Bethlehem, GA 30620"
-  },
-  {
-    "countyIndex": 222,
-    "fips": "08067",
-    "state": "Colorado",
-    "sourceCounty": "La Plata",
-    "sourcePopulation": 56898,
-    "businessName": "M&R Electric",
-    "placeId": "ChIJm8EDCrIDPIcRjWEYHvCnszo",
-    "countyRank": 6,
-    "countyResultCount": 60,
-    "city": "Durango",
-    "liveAddress": "178 Bodo Dr, Durango, CO 81303"
-  },
-  {
     "countyIndex": 209,
     "fips": "08037",
     "state": "Colorado",
@@ -258,5 +206,57 @@
     "countyResultCount": 60,
     "city": "Eagle",
     "liveAddress": "1353 Chambers Ave, Eagle, CO 81631"
+  },
+  {
+    "countyIndex": 193,
+    "fips": "06109",
+    "state": "California",
+    "sourceCounty": "Tuolumne",
+    "sourcePopulation": 53160,
+    "businessName": "Hughes Prospective Electrical Company LLC",
+    "placeId": "ChIJyTrFkApf_EcRu_h3FrCqAdo",
+    "countyRank": 5,
+    "countyResultCount": 60,
+    "city": "Columbia",
+    "liveAddress": "23620 Orion Mine Rd, Columbia, CA 95310"
+  },
+  {
+    "countyIndex": 296,
+    "fips": "13029",
+    "state": "Georgia",
+    "sourceCounty": "Bryan",
+    "sourcePopulation": 52062,
+    "businessName": "Richmond HURD Electrical Contracting",
+    "placeId": "ChIJYaKt-5MP-4gR0pM7NxuOwQg",
+    "countyRank": 5,
+    "countyResultCount": 50,
+    "city": "Richmond Hill",
+    "liveAddress": "480 Edsel Dr #100, Richmond Hill, GA 31324"
+  },
+  {
+    "countyIndex": 211,
+    "fips": "08043",
+    "state": "Colorado",
+    "sourceCounty": "Fremont",
+    "sourcePopulation": 50039,
+    "businessName": "Mathews Brothers Electric, Inc",
+    "placeId": "ChIJsZBJJHCPFIcRTxxutqL35WQ",
+    "countyRank": 5,
+    "countyResultCount": 60,
+    "city": "Cañon City",
+    "liveAddress": "831 Myrtle Ave, Cañon City, CO 81212"
+  },
+  {
+    "countyIndex": 22,
+    "fips": "01045",
+    "state": "Alabama",
+    "sourceCounty": "Dale",
+    "sourcePopulation": 49912,
+    "businessName": "Sanders Electrical & Plumbing",
+    "placeId": "ChIJN7_G99F9kogRJgm3o9txvHs",
+    "countyRank": 5,
+    "countyResultCount": 60,
+    "city": "Ozark",
+    "liveAddress": "604 S Union Ave, Ozark, AL 36360"
   }
 ]

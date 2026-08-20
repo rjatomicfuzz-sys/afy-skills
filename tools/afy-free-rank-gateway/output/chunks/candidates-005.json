@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 158,
-    "fips": "05125",
-    "state": "Arkansas",
-    "sourceCounty": "Saline",
-    "sourcePopulation": 133288,
-    "businessName": "Daniel Electrical",
-    "placeId": "ChIJ3VpMyfZazYcRXXi2YnAFPMI",
-    "countyRank": 45,
-    "countyResultCount": 60,
-    "city": "Alexander",
-    "liveAddress": "13190 Congo Ferndale Rd, Alexander, AR 72002"
-  },
-  {
     "countyIndex": 176,
     "fips": "06023",
     "state": "California",
@@ -258,5 +245,18 @@
     "countyResultCount": 60,
     "city": "Durango",
     "liveAddress": "1135 Main Ave Ste B, Durango, CO 81301"
+  },
+  {
+    "countyIndex": 209,
+    "fips": "08037",
+    "state": "Colorado",
+    "sourceCounty": "Eagle",
+    "sourcePopulation": 54291,
+    "businessName": "Brush Creek Electric Inc",
+    "placeId": "ChIJE5jMrtDAQYcRgDb5DKvcP9U",
+    "countyRank": 42,
+    "countyResultCount": 60,
+    "city": "Eagle",
+    "liveAddress": "770 Lindbergh Dr, Eagle, CO 81631"
   }
 ]

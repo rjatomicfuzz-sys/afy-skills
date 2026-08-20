@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 15,
-    "fips": "01031",
-    "state": "Alabama",
-    "sourceCounty": "Coffee",
-    "sourcePopulation": 56953,
-    "businessName": "Burbage electrical services inc.",
-    "placeId": "ChIJj8oq4E0PkogRzpmb05K7lig",
-    "countyRank": 52,
-    "countyResultCount": 60,
-    "city": "Elba",
-    "liveAddress": "835 Claxton Ave, Elba, AL 36323"
-  },
-  {
     "countyIndex": 35,
     "fips": "01071",
     "state": "Alabama",
@@ -258,5 +245,18 @@
     "countyResultCount": 50,
     "city": "Westville",
     "liveAddress": "1310 FL-81, Westville, FL 32464"
+  },
+  {
+    "countyIndex": 119,
+    "fips": "05045",
+    "state": "Arkansas",
+    "sourceCounty": "Faulkner",
+    "sourcePopulation": 133979,
+    "businessName": "EElectric",
+    "placeId": "ChIJfYI1lMZ9zYcR18zPqxuDDOA",
+    "countyRank": 49,
+    "countyResultCount": 60,
+    "city": "Conway",
+    "liveAddress": "5359 Hunter Ln, Conway, AR 72034"
   }
 ]

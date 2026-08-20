@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 119,
-    "fips": "05045",
-    "state": "Arkansas",
-    "sourceCounty": "Faulkner",
-    "sourcePopulation": 133979,
-    "businessName": "EElectric",
-    "placeId": "ChIJfYI1lMZ9zYcR18zPqxuDDOA",
-    "countyRank": 49,
-    "countyResultCount": 60,
-    "city": "Conway",
-    "liveAddress": "5359 Hunter Ln, Conway, AR 72034"
-  },
-  {
     "countyIndex": 158,
     "fips": "05125",
     "state": "Arkansas",
@@ -258,5 +245,18 @@
     "countyResultCount": 58,
     "city": "Hope",
     "liveAddress": "119 S Elm St, Hope, AR 71801"
+  },
+  {
+    "countyIndex": 158,
+    "fips": "05125",
+    "state": "Arkansas",
+    "sourceCounty": "Saline",
+    "sourcePopulation": 133288,
+    "businessName": "Daniel Electrical",
+    "placeId": "ChIJ3VpMyfZazYcRXXi2YnAFPMI",
+    "countyRank": 45,
+    "countyResultCount": 60,
+    "city": "Alexander",
+    "liveAddress": "13190 Congo Ferndale Rd, Alexander, AR 72002"
   }
 ]

@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 267,
-    "fips": "12063",
-    "state": "Florida",
-    "sourceCounty": "Jackson",
-    "sourcePopulation": 49629,
-    "businessName": "Jones Johnson Electrical",
-    "placeId": "ChIJ9RtgipbZkogRCmRUacOm2hs",
-    "countyRank": 30,
-    "countyResultCount": 35,
-    "city": "Greenwood",
-    "liveAddress": "4169 Billingsley Ln, Greenwood, FL 32443"
-  },
-  {
     "countyIndex": 278,
     "fips": "12123",
     "state": "Florida",
@@ -258,5 +245,18 @@
     "countyResultCount": 60,
     "city": "Dothan",
     "liveAddress": "3243 Hodgesville Rd, Dothan, AL 36301"
+  },
+  {
+    "countyIndex": 158,
+    "fips": "05125",
+    "state": "Arkansas",
+    "sourceCounty": "Saline",
+    "sourcePopulation": 133288,
+    "businessName": "Elliott Electrical, Inc.",
+    "placeId": "ChIJw8PwEiRSzYcRUE_CrL4m_DY",
+    "countyRank": 26,
+    "countyResultCount": 60,
+    "city": "Bryant",
+    "liveAddress": "22095 I-30 Bldg 300, Bryant, AR 72022"
   }
 ]

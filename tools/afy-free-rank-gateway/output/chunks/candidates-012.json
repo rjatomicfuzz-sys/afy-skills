@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 176,
-    "fips": "06023",
-    "state": "California",
-    "sourceCounty": "Humboldt",
-    "sourcePopulation": 131647,
-    "businessName": "Scurfield Electric, Heating & Solar",
-    "placeId": "ChIJER8n6whX0VQRxBVIXZ8h9y4",
-    "countyRank": 24,
-    "countyResultCount": 60,
-    "city": "Arcata",
-    "liveAddress": "550 S G St Ste 14, Arcata, CA 95521"
-  },
-  {
     "countyIndex": 39,
     "fips": "01083",
     "state": "Alabama",
@@ -258,5 +245,18 @@
     "countyResultCount": 60,
     "city": "Dothan",
     "liveAddress": "1023 N Beverlye Rd, Dothan, AL 36303"
+  },
+  {
+    "countyIndex": 209,
+    "fips": "08037",
+    "state": "Colorado",
+    "sourceCounty": "Eagle",
+    "sourcePopulation": 54291,
+    "businessName": "Wire Nut Electric Inc",
+    "placeId": "ChIJAQAAABB4aocR6bN1s5b0NEk",
+    "countyRank": 22,
+    "countyResultCount": 60,
+    "city": "Avon",
+    "liveAddress": "112, Avon, CO 81620"
   }
 ]

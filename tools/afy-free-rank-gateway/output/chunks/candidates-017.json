@@ -1,57 +1,5 @@
 [
   {
-    "countyIndex": 112,
-    "fips": "05031",
-    "state": "Arkansas",
-    "sourceCounty": "Craighead",
-    "sourcePopulation": 116957,
-    "businessName": "Speakes Electric",
-    "placeId": "ChIJgVQfYY9_1ocRLin9D9fv-nE",
-    "countyRank": 13,
-    "countyResultCount": 60,
-    "city": "Brookland",
-    "liveAddress": "122 Emma Dr, Brookland, AR 72417"
-  },
-  {
-    "countyIndex": 7,
-    "fips": "01015",
-    "state": "Alabama",
-    "sourceCounty": "Calhoun",
-    "sourcePopulation": 115834,
-    "businessName": "Christian Electric Services",
-    "placeId": "ChIJVVVVVRW0i4gR9QrPdJ-lm1c",
-    "countyRank": 13,
-    "countyResultCount": 60,
-    "city": "Anniston",
-    "liveAddress": "1001 Noble St, Anniston, AL 36201"
-  },
-  {
-    "countyIndex": 222,
-    "fips": "08067",
-    "state": "Colorado",
-    "sourceCounty": "La Plata",
-    "sourcePopulation": 56898,
-    "businessName": "Phillips Electric",
-    "placeId": "ChIJ1UZL99wCPIcRjEqRhCm1TFk",
-    "countyRank": 13,
-    "countyResultCount": 60,
-    "city": "Durango",
-    "liveAddress": "570 Turner Dr # F, Durango, CO 81303"
-  },
-  {
-    "countyIndex": 296,
-    "fips": "13029",
-    "state": "Georgia",
-    "sourceCounty": "Bryan",
-    "sourcePopulation": 52062,
-    "businessName": "Sweet Electric",
-    "placeId": "ChIJvdRtNqAP-4gRjy8WF2OtKgY",
-    "countyRank": 13,
-    "countyResultCount": 50,
-    "city": "Richmond Hill",
-    "liveAddress": "95 Dimick Dr, Richmond Hill, GA 31324"
-  },
-  {
     "countyIndex": 211,
     "fips": "08043",
     "state": "Colorado",
@@ -258,5 +206,57 @@
     "countyResultCount": 45,
     "city": "Live Oak",
     "liveAddress": "909 Suwannee Ave SW, Live Oak, FL 32064"
+  },
+  {
+    "countyIndex": 225,
+    "fips": "08075",
+    "state": "Colorado",
+    "sourceCounty": "Logan",
+    "sourcePopulation": 20654,
+    "businessName": "Robirds Electric",
+    "placeId": "ChIJP51gizXycYcRhriUvP1We9s",
+    "countyRank": 11,
+    "countyResultCount": 60,
+    "city": "Sterling",
+    "liveAddress": "446 S 11th Ave, Sterling, CO 80751"
+  },
+  {
+    "countyIndex": 283,
+    "fips": "13001",
+    "state": "Georgia",
+    "sourceCounty": "Appling",
+    "sourcePopulation": 19100,
+    "businessName": "Trinity Electrical Services Inc",
+    "placeId": "ChIJVSZ8fnts8IgRBU1_PygfTqA",
+    "countyRank": 11,
+    "countyResultCount": 25,
+    "city": "Baxley",
+    "liveAddress": "2317 Golden Isles W, Baxley, GA 31513"
+  },
+  {
+    "countyIndex": 39,
+    "fips": "01083",
+    "state": "Alabama",
+    "sourceCounty": "Limestone",
+    "sourcePopulation": 122928,
+    "businessName": "MetroPower, Inc.",
+    "placeId": "ChIJr7hUK3KLYogRfonWK1y6C_8",
+    "countyRank": 10,
+    "countyResultCount": 60,
+    "city": "Athens",
+    "liveAddress": "14918 Mary Alice Wy, Athens, AL 35611"
+  },
+  {
+    "countyIndex": 265,
+    "fips": "12055",
+    "state": "Florida",
+    "sourceCounty": "Highlands",
+    "sourcePopulation": 111122,
+    "businessName": "Electrical Unlimited Service",
+    "placeId": "ChIJW8l_y_1a3IgRBp-q-LgVb2s",
+    "countyRank": 10,
+    "countyResultCount": 60,
+    "city": "Sebring",
+    "liveAddress": "419 Ranchero Dr, Sebring, FL 33876"
   }
 ]

@@ -130,19 +130,6 @@
     "liveAddress": "100 Cline Dr SW, Cartersville, GA 30120"
   },
   {
-    "countyIndex": 211,
-    "fips": "08043",
-    "state": "Colorado",
-    "sourceCounty": "Fremont",
-    "sourcePopulation": 50039,
-    "businessName": "Fremont Electric Inc",
-    "placeId": "ChIJUYIi33UBWYcR1OgRRT0-yyo",
-    "countyRank": 54,
-    "countyResultCount": 60,
-    "city": "Lander",
-    "liveAddress": "250 Tulip St, Lander, WY 82520"
-  },
-  {
     "countyIndex": 200,
     "fips": "08015",
     "state": "Colorado",
@@ -258,5 +245,18 @@
     "countyResultCount": 60,
     "city": "Gadsden",
     "liveAddress": "1234 Old Anniston-Gadsden Hwy, Gadsden, AL 35905"
+  },
+  {
+    "countyIndex": 15,
+    "fips": "01031",
+    "state": "Alabama",
+    "sourceCounty": "Coffee",
+    "sourcePopulation": 56953,
+    "businessName": "Burbage electrical services inc.",
+    "placeId": "ChIJj8oq4E0PkogRzpmb05K7lig",
+    "countyRank": 52,
+    "countyResultCount": 60,
+    "city": "Elba",
+    "liveAddress": "835 Claxton Ave, Elba, AL 36323"
   }
 ]

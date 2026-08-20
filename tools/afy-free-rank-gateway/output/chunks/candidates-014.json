@@ -1,31 +1,5 @@
 [
   {
-    "countyIndex": 222,
-    "fips": "08067",
-    "state": "Colorado",
-    "sourceCounty": "La Plata",
-    "sourcePopulation": 56898,
-    "businessName": "Michael Chapman",
-    "placeId": "ChIJNfMAobWnPocR8v1ihaZDRl4",
-    "countyRank": 20,
-    "countyResultCount": 60,
-    "city": "Durango",
-    "liveAddress": "2403 Co Rd 203 #17, Durango, CO 81301"
-  },
-  {
-    "countyIndex": 209,
-    "fips": "08037",
-    "state": "Colorado",
-    "sourceCounty": "Eagle",
-    "sourcePopulation": 54291,
-    "businessName": "Tri Phase Electric",
-    "placeId": "ChIJtynD3-24QYcRIl7adZGsz7M",
-    "countyRank": 20,
-    "countyResultCount": 60,
-    "city": "Gypsum",
-    "liveAddress": "325 Hardscrabble Rd, Gypsum, CO 81637"
-  },
-  {
     "countyIndex": 193,
     "fips": "06109",
     "state": "California",
@@ -115,19 +89,6 @@
     "countyResultCount": 60,
     "city": "Dothan",
     "liveAddress": "221 W Carroll St, Dothan, AL 36301"
-  },
-  {
-    "countyIndex": 274,
-    "fips": "12089",
-    "state": "Florida",
-    "sourceCounty": "Nassau",
-    "sourcePopulation": 106879,
-    "businessName": "E.H Haines Electric",
-    "placeId": "ChIJZzyEu6F6wokRHkt9SX5PHYs",
-    "countyRank": 19,
-    "countyResultCount": 60,
-    "city": "Lido Beach",
-    "liveAddress": "117 Regent Dr, Lido Beach, NY 11561"
   },
   {
     "countyIndex": 312,
@@ -221,19 +182,6 @@
     "liveAddress": "722 S Main Ave, Lake Placid, FL 33852"
   },
   {
-    "countyIndex": 274,
-    "fips": "12089",
-    "state": "Florida",
-    "sourceCounty": "Nassau",
-    "sourcePopulation": 106879,
-    "businessName": "H&A Long Island Electrician",
-    "placeId": "ChIJ7-HlQPOHwokR8oeArFSkNTI",
-    "countyRank": 18,
-    "countyResultCount": 60,
-    "city": "Mineola",
-    "liveAddress": "203 Columbus Pkwy, Mineola, NY 11501"
-  },
-  {
     "countyIndex": 277,
     "fips": "12121",
     "state": "Florida",
@@ -258,5 +206,57 @@
     "countyResultCount": 39,
     "city": "Perry",
     "liveAddress": "5343 Turner Rd, Perry, FL 32348"
+  },
+  {
+    "countyIndex": 125,
+    "fips": "05057",
+    "state": "Arkansas",
+    "sourceCounty": "Hempstead",
+    "sourcePopulation": 19080,
+    "businessName": "South Ark Electric LLC",
+    "placeId": "ChIJ91cBEV2DM4YRmj_4mgZGTy8",
+    "countyRank": 18,
+    "countyResultCount": 58,
+    "city": "Hope",
+    "liveAddress": "816 W 4th St, Hope, AR 71801"
+  },
+  {
+    "countyIndex": 158,
+    "fips": "05125",
+    "state": "Arkansas",
+    "sourceCounty": "Saline",
+    "sourcePopulation": 133288,
+    "businessName": "Madden Electric",
+    "placeId": "ChIJa-h4E_lNzYcRe2NZu6Kx6j0",
+    "countyRank": 17,
+    "countyResultCount": 60,
+    "city": "Benton",
+    "liveAddress": "4062 Hampton Dr, Benton, AR 72019"
+  },
+  {
+    "countyIndex": 184,
+    "fips": "06055",
+    "state": "California",
+    "sourceCounty": "Napa",
+    "sourcePopulation": 132949,
+    "businessName": "Myles Davis Electric, Inc.",
+    "placeId": "ChIJL15-WeAGhYAR_F0b6nsIZT8",
+    "countyRank": 17,
+    "countyResultCount": 60,
+    "city": "Napa",
+    "liveAddress": "3057 California Blvd, Napa, CA 94558"
+  },
+  {
+    "countyIndex": 176,
+    "fips": "06023",
+    "state": "California",
+    "sourceCounty": "Humboldt",
+    "sourcePopulation": 131647,
+    "businessName": "HAVEN-ELECTRIC INC",
+    "placeId": "ChIJi8l3wNFZ0VQRqHhWAkj5pWo",
+    "countyRank": 17,
+    "countyResultCount": 60,
+    "city": "Blue Lake",
+    "liveAddress": "405 Chartin Rd, Blue Lake, CA 95525"
   }
 ]

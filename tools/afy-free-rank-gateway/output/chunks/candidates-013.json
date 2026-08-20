@@ -1,31 +1,5 @@
 [
   {
-    "countyIndex": 274,
-    "fips": "12089",
-    "state": "Florida",
-    "sourceCounty": "Nassau",
-    "sourcePopulation": 106879,
-    "businessName": "Nello Electrical",
-    "placeId": "ChIJa8HZnf6HwokRWqEgMtC2kAU",
-    "countyRank": 22,
-    "countyResultCount": 60,
-    "city": "Mineola",
-    "liveAddress": "449 Wellington Rd, Mineola, NY 11501"
-  },
-  {
-    "countyIndex": 209,
-    "fips": "08037",
-    "state": "Colorado",
-    "sourceCounty": "Eagle",
-    "sourcePopulation": 54291,
-    "businessName": "Wire Nut Electric Inc",
-    "placeId": "ChIJAQAAABB4aocR6bN1s5b0NEk",
-    "countyRank": 22,
-    "countyResultCount": 60,
-    "city": "Avon",
-    "liveAddress": "112, Avon, CO 81620"
-  },
-  {
     "countyIndex": 277,
     "fips": "12121",
     "state": "Florida",
@@ -258,5 +232,31 @@
     "countyResultCount": 60,
     "city": "Athens",
     "liveAddress": "27558 US-72, Athens, AL 35613"
+  },
+  {
+    "countyIndex": 222,
+    "fips": "08067",
+    "state": "Colorado",
+    "sourceCounty": "La Plata",
+    "sourcePopulation": 56898,
+    "businessName": "Michael Chapman",
+    "placeId": "ChIJNfMAobWnPocR8v1ihaZDRl4",
+    "countyRank": 20,
+    "countyResultCount": 60,
+    "city": "Durango",
+    "liveAddress": "2403 Co Rd 203 #17, Durango, CO 81301"
+  },
+  {
+    "countyIndex": 209,
+    "fips": "08037",
+    "state": "Colorado",
+    "sourceCounty": "Eagle",
+    "sourcePopulation": 54291,
+    "businessName": "Tri Phase Electric",
+    "placeId": "ChIJtynD3-24QYcRIl7adZGsz7M",
+    "countyRank": 20,
+    "countyResultCount": 60,
+    "city": "Gypsum",
+    "liveAddress": "325 Hardscrabble Rd, Gypsum, CO 81637"
   }
 ]

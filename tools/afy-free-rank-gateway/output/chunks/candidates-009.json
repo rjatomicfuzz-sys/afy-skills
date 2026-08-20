@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 158,
-    "fips": "05125",
-    "state": "Arkansas",
-    "sourceCounty": "Saline",
-    "sourcePopulation": 133288,
-    "businessName": "Tme Electric",
-    "placeId": "ChIJA1Sl4sNTzYcRjWEZ4INqXYk",
-    "countyRank": 32,
-    "countyResultCount": 60,
-    "city": "Benton",
-    "liveAddress": "2020 Silica Heights, Benton, AR 72015"
-  },
-  {
     "countyIndex": 184,
     "fips": "06055",
     "state": "California",
@@ -258,5 +245,18 @@
     "countyResultCount": 60,
     "city": "Gypsum",
     "liveAddress": "4675 US-6 #20, Gypsum, CO 81637"
+  },
+  {
+    "countyIndex": 267,
+    "fips": "12063",
+    "state": "Florida",
+    "sourceCounty": "Jackson",
+    "sourcePopulation": 49629,
+    "businessName": "Jones Johnson Electrical",
+    "placeId": "ChIJ9RtgipbZkogRCmRUacOm2hs",
+    "countyRank": 30,
+    "countyResultCount": 35,
+    "city": "Greenwood",
+    "liveAddress": "4169 Billingsley Ln, Greenwood, FL 32443"
   }
 ]

@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 209,
-    "fips": "08037",
-    "state": "Colorado",
-    "sourceCounty": "Eagle",
-    "sourcePopulation": 54291,
-    "businessName": "Brush Creek Electric Inc",
-    "placeId": "ChIJE5jMrtDAQYcRgDb5DKvcP9U",
-    "countyRank": 42,
-    "countyResultCount": 60,
-    "city": "Eagle",
-    "liveAddress": "770 Lindbergh Dr, Eagle, CO 81631"
-  },
-  {
     "countyIndex": 296,
     "fips": "13029",
     "state": "Georgia",
@@ -258,5 +245,18 @@
     "countyResultCount": 60,
     "city": "Ignacio",
     "liveAddress": "350 Co Rd 334, Ignacio, CO 81137"
+  },
+  {
+    "countyIndex": 211,
+    "fips": "08043",
+    "state": "Colorado",
+    "sourceCounty": "Fremont",
+    "sourcePopulation": 50039,
+    "businessName": "Brookside Electric",
+    "placeId": "ChIJuZIfod2FFIcRwfrZ4RrveHA",
+    "countyRank": 39,
+    "countyResultCount": 60,
+    "city": "Cañon City",
+    "liveAddress": "1732 Willow St, Cañon City, CO 81212"
   }
 ]

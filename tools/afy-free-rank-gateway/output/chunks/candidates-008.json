@@ -1,18 +1,5 @@
 [
   {
-    "countyIndex": 265,
-    "fips": "12055",
-    "state": "Florida",
-    "sourceCounty": "Highlands",
-    "sourcePopulation": 111122,
-    "businessName": "Amp Check Electric",
-    "placeId": "ChIJYZ2bf6pn3IgR5RWYJxSCOGI",
-    "countyRank": 35,
-    "countyResultCount": 60,
-    "city": "Lake Placid",
-    "liveAddress": "444 Garfield Ave NE, Lake Placid, FL 33852"
-  },
-  {
     "countyIndex": 44,
     "fips": "01095",
     "state": "Alabama",
@@ -258,5 +245,18 @@
     "countyResultCount": 60,
     "city": "Vilonia",
     "liveAddress": "1003 Main Street, Vilonia, AR 72173"
+  },
+  {
+    "countyIndex": 158,
+    "fips": "05125",
+    "state": "Arkansas",
+    "sourceCounty": "Saline",
+    "sourcePopulation": 133288,
+    "businessName": "Tme Electric",
+    "placeId": "ChIJA1Sl4sNTzYcRjWEZ4INqXYk",
+    "countyRank": 32,
+    "countyResultCount": 60,
+    "city": "Benton",
+    "liveAddress": "2020 Silica Heights, Benton, AR 72015"
   }
 ]

@@ -1,8 +1,11 @@
 {
   "runId": "AFY_BATCH_PRODUCTION_20260820_R1",
-  "totalCandidates": 455,
+  "preGeoCandidates": 455,
+  "geoExcluded": 4,
+  "totalCandidates": 451,
   "chunkSize": 20,
   "sheetAll": "sheet-all.csv",
+  "geoExcludedFile": "geo-excluded.json",
   "chunks": [
     {
       "file": "candidates-001.json",
@@ -162,8 +165,8 @@
       "file": "candidates-023.json",
       "csvFile": "sheet-023.csv",
       "start": 441,
-      "end": 455,
-      "count": 15
+      "end": 451,
+      "count": 11
     }
   ]
 }

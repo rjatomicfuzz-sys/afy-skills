@@ -1,57 +1,5 @@
 [
   {
-    "countyIndex": 225,
-    "fips": "08075",
-    "state": "Colorado",
-    "sourceCounty": "Logan",
-    "sourcePopulation": 20654,
-    "businessName": "Robirds Electric",
-    "placeId": "ChIJP51gizXycYcRhriUvP1We9s",
-    "countyRank": 11,
-    "countyResultCount": 60,
-    "city": "Sterling",
-    "liveAddress": "446 S 11th Ave, Sterling, CO 80751"
-  },
-  {
-    "countyIndex": 283,
-    "fips": "13001",
-    "state": "Georgia",
-    "sourceCounty": "Appling",
-    "sourcePopulation": 19100,
-    "businessName": "Trinity Electrical Services Inc",
-    "placeId": "ChIJVSZ8fnts8IgRBU1_PygfTqA",
-    "countyRank": 11,
-    "countyResultCount": 25,
-    "city": "Baxley",
-    "liveAddress": "2317 Golden Isles W, Baxley, GA 31513"
-  },
-  {
-    "countyIndex": 39,
-    "fips": "01083",
-    "state": "Alabama",
-    "sourceCounty": "Limestone",
-    "sourcePopulation": 122928,
-    "businessName": "MetroPower, Inc.",
-    "placeId": "ChIJr7hUK3KLYogRfonWK1y6C_8",
-    "countyRank": 10,
-    "countyResultCount": 60,
-    "city": "Athens",
-    "liveAddress": "14918 Mary Alice Wy, Athens, AL 35611"
-  },
-  {
-    "countyIndex": 265,
-    "fips": "12055",
-    "state": "Florida",
-    "sourceCounty": "Highlands",
-    "sourcePopulation": 111122,
-    "businessName": "Electrical Unlimited Service",
-    "placeId": "ChIJW8l_y_1a3IgRBp-q-LgVb2s",
-    "countyRank": 10,
-    "countyResultCount": 60,
-    "city": "Sebring",
-    "liveAddress": "419 Ranchero Dr, Sebring, FL 33876"
-  },
-  {
     "countyIndex": 209,
     "fips": "08037",
     "state": "Colorado",
@@ -258,5 +206,57 @@
     "countyResultCount": 60,
     "city": "Fort Smith",
     "liveAddress": "3510 Grand Ave, Fort Smith, AR 72904"
+  },
+  {
+    "countyIndex": 265,
+    "fips": "12055",
+    "state": "Florida",
+    "sourceCounty": "Highlands",
+    "sourcePopulation": 111122,
+    "businessName": "Mark Palmer Electric and Air",
+    "placeId": "ChIJY63h8Rha3IgRiCqEa45ktTg",
+    "countyRank": 8,
+    "countyResultCount": 60,
+    "city": "Sebring",
+    "liveAddress": "5232 US Hwy 27 N, Sebring, FL 33870"
+  },
+  {
+    "countyIndex": 34,
+    "fips": "01069",
+    "state": "Alabama",
+    "sourceCounty": "Houston",
+    "sourcePopulation": 110318,
+    "businessName": "Tri-states Electrical Contractors",
+    "placeId": "ChIJT7tlcPagkogRObCqIagNJiE",
+    "countyRank": 8,
+    "countyResultCount": 60,
+    "city": "Dothan",
+    "liveAddress": "9591 PO BOX, Dothan, AL 36304"
+  },
+  {
+    "countyIndex": 209,
+    "fips": "08037",
+    "state": "Colorado",
+    "sourceCounty": "Eagle",
+    "sourcePopulation": 54291,
+    "businessName": "Sunpak Electric",
+    "placeId": "ChIJkalmVR7Az4MRY4IHzkXG9Vw",
+    "countyRank": 8,
+    "countyResultCount": 60,
+    "city": "Eagle",
+    "liveAddress": "189 Sawatch Rd, Eagle, CO 81631"
+  },
+  {
+    "countyIndex": 22,
+    "fips": "01045",
+    "state": "Alabama",
+    "sourceCounty": "Dale",
+    "sourcePopulation": 49912,
+    "businessName": "Dunn Electrical",
+    "placeId": "ChIJ0SAYa5GAkogRCf_cpv9J-1o",
+    "countyRank": 8,
+    "countyResultCount": 60,
+    "city": "Ozark",
+    "liveAddress": "415 Skipperville Rd, Ozark, AL 36360"
   }
 ]

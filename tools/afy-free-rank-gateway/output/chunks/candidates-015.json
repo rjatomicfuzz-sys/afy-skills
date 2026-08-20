@@ -1,57 +1,5 @@
 [
   {
-    "countyIndex": 125,
-    "fips": "05057",
-    "state": "Arkansas",
-    "sourceCounty": "Hempstead",
-    "sourcePopulation": 19080,
-    "businessName": "South Ark Electric LLC",
-    "placeId": "ChIJ91cBEV2DM4YRmj_4mgZGTy8",
-    "countyRank": 18,
-    "countyResultCount": 58,
-    "city": "Hope",
-    "liveAddress": "816 W 4th St, Hope, AR 71801"
-  },
-  {
-    "countyIndex": 158,
-    "fips": "05125",
-    "state": "Arkansas",
-    "sourceCounty": "Saline",
-    "sourcePopulation": 133288,
-    "businessName": "Madden Electric",
-    "placeId": "ChIJa-h4E_lNzYcRe2NZu6Kx6j0",
-    "countyRank": 17,
-    "countyResultCount": 60,
-    "city": "Benton",
-    "liveAddress": "4062 Hampton Dr, Benton, AR 72019"
-  },
-  {
-    "countyIndex": 184,
-    "fips": "06055",
-    "state": "California",
-    "sourceCounty": "Napa",
-    "sourcePopulation": 132949,
-    "businessName": "Myles Davis Electric, Inc.",
-    "placeId": "ChIJL15-WeAGhYAR_F0b6nsIZT8",
-    "countyRank": 17,
-    "countyResultCount": 60,
-    "city": "Napa",
-    "liveAddress": "3057 California Blvd, Napa, CA 94558"
-  },
-  {
-    "countyIndex": 176,
-    "fips": "06023",
-    "state": "California",
-    "sourceCounty": "Humboldt",
-    "sourcePopulation": 131647,
-    "businessName": "HAVEN-ELECTRIC INC",
-    "placeId": "ChIJi8l3wNFZ0VQRqHhWAkj5pWo",
-    "countyRank": 17,
-    "countyResultCount": 60,
-    "city": "Blue Lake",
-    "liveAddress": "405 Chartin Rd, Blue Lake, CA 95525"
-  },
-  {
     "countyIndex": 161,
     "fips": "05131",
     "state": "Arkansas",
@@ -258,5 +206,57 @@
     "countyResultCount": 39,
     "city": "Steinhatchee",
     "liveAddress": "1407 Rives Ave, Steinhatchee, FL 32359"
+  },
+  {
+    "countyIndex": 256,
+    "fips": "12035",
+    "state": "Florida",
+    "sourceCounty": "Flagler",
+    "sourcePopulation": 140360,
+    "businessName": "Palm Coast Electric Inc.",
+    "placeId": "ChIJq6oeeJmT5ogR1kRjFwtGnME",
+    "countyRank": 15,
+    "countyResultCount": 60,
+    "city": "Palm Coast",
+    "liveAddress": "3 Industry Dr Unit 8, Palm Coast, FL 32137"
+  },
+  {
+    "countyIndex": 308,
+    "fips": "13059",
+    "state": "Georgia",
+    "sourceCounty": "Clarke",
+    "sourcePopulation": 129921,
+    "businessName": "Edison Electricians of Athens",
+    "placeId": "ChIJ3fNCrxxt9ogR965SEBExSaY",
+    "countyRank": 15,
+    "countyResultCount": 60,
+    "city": "Athens",
+    "liveAddress": "675 Pulaski St Ste 112, Athens, GA 30601"
+  },
+  {
+    "countyIndex": 39,
+    "fips": "01083",
+    "state": "Alabama",
+    "sourceCounty": "Limestone",
+    "sourcePopulation": 122928,
+    "businessName": "Dixie Electric, LLC",
+    "placeId": "ChIJyaX6sAiLYogR0HD4_zIqsZo",
+    "countyRank": 15,
+    "countyResultCount": 60,
+    "city": "Athens",
+    "liveAddress": "1623 L Gray Blvd, Athens, AL 35611"
+  },
+  {
+    "countyIndex": 112,
+    "fips": "05031",
+    "state": "Arkansas",
+    "sourceCounty": "Craighead",
+    "sourcePopulation": 116957,
+    "businessName": "Choate's Air Conditioning, Heating, Plumbing And Electrical",
+    "placeId": "ChIJEwLxzHYr1IcRfbdkJmybybc",
+    "countyRank": 15,
+    "countyResultCount": 60,
+    "city": "Jonesboro",
+    "liveAddress": "4315 E Johnson Ave, Jonesboro, AR 72401"
   }
 ]
