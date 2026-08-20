@@ -7,14 +7,10 @@
     "sourcePopulation": 111122,
     "businessName": "Current Electric",
     "placeId": "ChIJI_s3Fqtb3IgRzta21Tz4KXE",
-    "googleMapsUri": "https://maps.google.com/?cid=8154321540498249422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 60,
     "city": "Sebring",
-    "liveAddress": "4403 Persian Terrace, Sebring, FL 33875",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:04.023Z"
+    "liveAddress": "4403 Persian Terrace, Sebring, FL 33875"
   },
   {
     "countyIndex": 34,
@@ -24,14 +20,10 @@
     "sourcePopulation": 110318,
     "businessName": "Vinson Plumbing & Electric",
     "placeId": "ChIJ7XduFkyNkogRmhud5Uh8SAk",
-    "googleMapsUri": "https://maps.google.com/?cid=668921197196286874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 60,
     "city": "Dothan",
-    "liveAddress": "634 S Shady Ln, Dothan, AL 36301",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:04.230Z"
+    "liveAddress": "634 S Shady Ln, Dothan, AL 36301"
   },
   {
     "countyIndex": 289,
@@ -41,14 +33,10 @@
     "sourcePopulation": 99773,
     "businessName": "CDT Electric",
     "placeId": "ChIJ4yRrWMdb9IgRYEwhbrf9bGM",
-    "googleMapsUri": "https://maps.google.com/?cid=7164380071508135008&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 60,
     "city": "Bethlehem",
-    "liveAddress": "1234 Cabin Bridge Rd, Bethlehem, GA 30620",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:05.930Z"
+    "liveAddress": "1234 Cabin Bridge Rd, Bethlehem, GA 30620"
   },
   {
     "countyIndex": 222,
@@ -58,14 +46,10 @@
     "sourcePopulation": 56898,
     "businessName": "M&R Electric",
     "placeId": "ChIJm8EDCrIDPIcRjWEYHvCnszo",
-    "googleMapsUri": "https://maps.google.com/?cid=4229909124769931661&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 60,
     "city": "Durango",
-    "liveAddress": "178 Bodo Dr, Durango, CO 81303",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:36.808Z"
+    "liveAddress": "178 Bodo Dr, Durango, CO 81303"
   },
   {
     "countyIndex": 209,
@@ -75,14 +59,10 @@
     "sourcePopulation": 54291,
     "businessName": "Boardwalk Electric Inc",
     "placeId": "ChIJlZR7VADBQYcRbxnQmDtRhA4",
-    "googleMapsUri": "https://maps.google.com/?cid=1046050329865492847&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 60,
     "city": "Gypsum",
-    "liveAddress": "39 Cochise Ct, Gypsum, CO 81637",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:36.908Z"
+    "liveAddress": "39 Cochise Ct, Gypsum, CO 81637"
   },
   {
     "countyIndex": 267,
@@ -92,14 +72,10 @@
     "sourcePopulation": 49629,
     "businessName": "S & S Electric of Florida Inc",
     "placeId": "ChIJezM-SjUnk4gRypDPjUtIAAk",
-    "googleMapsUri": "https://maps.google.com/?cid=648597835680288970&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 35,
     "city": "Marianna",
-    "liveAddress": "2990 FL-71, Marianna, FL 32446",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:38.396Z"
+    "liveAddress": "2990 FL-71, Marianna, FL 32446"
   },
   {
     "countyIndex": 10,
@@ -109,14 +85,10 @@
     "sourcePopulation": 47708,
     "businessName": "PateCo Electric",
     "placeId": "ChIJx51DCUN9iYgRzYe8ReZvzac",
-    "googleMapsUri": "https://maps.google.com/?cid=12091443609362794445&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 60,
     "city": "Clanton",
-    "liveAddress": "540 Co Rd 410, Clanton, AL 35045",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:39.923Z"
+    "liveAddress": "540 Co Rd 410, Clanton, AL 35045"
   },
   {
     "countyIndex": 312,
@@ -126,14 +98,10 @@
     "sourcePopulation": 47438,
     "businessName": "Xtreme Electric",
     "placeId": "ChIJ9Qq4yrXl7YgRQBFf7FL5qio",
-    "googleMapsUri": "https://maps.google.com/?cid=3074543830182072640&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 35,
     "city": "Moultrie",
-    "liveAddress": "1385 RL Sears, Talmadge Dr SE Rd201, Moultrie, GA 31768",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:39.905Z"
+    "liveAddress": "1385 RL Sears, Talmadge Dr SE Rd201, Moultrie, GA 31768"
   },
   {
     "countyIndex": 106,
@@ -143,14 +111,10 @@
     "sourcePopulation": 20938,
     "businessName": "Jones Electric, LLC.",
     "placeId": "ChIJ3ckQNb3jMoYRvTQRVRZQ1wM",
-    "googleMapsUri": "https://maps.google.com/?cid=276777958953268413&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 27,
     "city": "Arkadelphia",
-    "liveAddress": "637 Vaden Rd, Arkadelphia, AR 71923",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:48:37.379Z"
+    "liveAddress": "637 Vaden Rd, Arkadelphia, AR 71923"
   },
   {
     "countyIndex": 283,
@@ -160,14 +124,10 @@
     "sourcePopulation": 19100,
     "businessName": "CAB Enterprises Inc",
     "placeId": "ChIJGXRtmeoO8IgRb6qnzQc4BzA",
-    "googleMapsUri": "https://maps.google.com/?cid=3460796444823759471&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 6,
     "countyResultCount": 25,
     "city": "Baxley",
-    "liveAddress": "64 Bowen Rd, Baxley, GA 31513",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:48:40.501Z"
+    "liveAddress": "64 Bowen Rd, Baxley, GA 31513"
   },
   {
     "countyIndex": 256,
@@ -177,14 +137,10 @@
     "sourcePopulation": 140360,
     "businessName": "Blondin Electric Inc",
     "placeId": "ChIJXVzMsRPq5ogRQDqtlK7JRCQ",
-    "googleMapsUri": "https://maps.google.com/?cid=2613435435437603392&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Palm Coast",
-    "liveAddress": "20 Sea Board Ct, Palm Coast, FL 32164",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:00.522Z"
+    "liveAddress": "20 Sea Board Ct, Palm Coast, FL 32164"
   },
   {
     "countyIndex": 158,
@@ -194,14 +150,10 @@
     "sourcePopulation": 133288,
     "businessName": "B-Town Electric and Services",
     "placeId": "ChIJMbp9-pnG-KMRCq1yxPVesak",
-    "googleMapsUri": "https://maps.google.com/?cid=12227658872943455498&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Benton",
-    "liveAddress": "804 Coral Cove, Benton, AR 72015",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:00.540Z"
+    "liveAddress": "804 Coral Cove, Benton, AR 72015"
   },
   {
     "countyIndex": 184,
@@ -211,14 +163,10 @@
     "sourcePopulation": 132949,
     "businessName": "Silverado Electric",
     "placeId": "ChIJWzAKvXIGhYAR295cCjmsKtA",
-    "googleMapsUri": "https://maps.google.com/?cid=14999990869897830107&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Napa",
-    "liveAddress": "845 Sousa Ln, Napa, CA 94559",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:01.078Z"
+    "liveAddress": "845 Sousa Ln, Napa, CA 94559"
   },
   {
     "countyIndex": 176,
@@ -228,14 +176,10 @@
     "sourcePopulation": 131647,
     "businessName": "An Electrician",
     "placeId": "ChIJL0ln-xxa0VQRArMtQlcFtdg",
-    "googleMapsUri": "https://maps.google.com/?cid=15615393155307647746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Eureka",
-    "liveAddress": "5151 US-101, Eureka, CA 95501",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:01.431Z"
+    "liveAddress": "5151 US-101, Eureka, CA 95501"
   },
   {
     "countyIndex": 308,
@@ -245,14 +189,10 @@
     "sourcePopulation": 129921,
     "businessName": "Blue Moon Electric",
     "placeId": "ChIJ1apM3INt9ogRNe7BVSyo6aw",
-    "googleMapsUri": "https://maps.google.com/?cid=12459674752467988021&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Bogart",
-    "liveAddress": "190 Ben Burton Rd, Bogart, GA 30622",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:02.340Z"
+    "liveAddress": "190 Ben Burton Rd, Bogart, GA 30622"
   },
   {
     "countyIndex": 39,
@@ -262,14 +202,10 @@
     "sourcePopulation": 122928,
     "businessName": "Urban Electric LLC",
     "placeId": "ChIJ_ydwQ_1lYogR3uuNKlWdXV0",
-    "googleMapsUri": "https://maps.google.com/?cid=6727706407473114078&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Madison",
-    "liveAddress": "120 Park Trail Dr, Madison, AL 35756",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:02.877Z"
+    "liveAddress": "120 Park Trail Dr, Madison, AL 35756"
   },
   {
     "countyIndex": 7,
@@ -279,14 +215,10 @@
     "sourcePopulation": 115834,
     "businessName": "Acker Electric Company, Inc",
     "placeId": "ChIJp0hKa2uzi4gRxVYXCE9x4Es",
-    "googleMapsUri": "https://maps.google.com/?cid=5467494531879884485&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Anniston",
-    "liveAddress": "4265 Hill St, Anniston, AL 36206",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:03.785Z"
+    "liveAddress": "4265 Hill St, Anniston, AL 36206"
   },
   {
     "countyIndex": 265,
@@ -296,14 +228,10 @@
     "sourcePopulation": 111122,
     "businessName": "Air & Electrical Services",
     "placeId": "ChIJ9_trzR1a3IgR0_HMl21FT_w",
-    "googleMapsUri": "https://maps.google.com/?cid=18180826557718524371&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Sebring",
-    "liveAddress": "4715 U.S. Hwy 27 S, Sebring, FL 33870",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:04.023Z"
+    "liveAddress": "4715 U.S. Hwy 27 S, Sebring, FL 33870"
   },
   {
     "countyIndex": 289,
@@ -313,14 +241,10 @@
     "sourcePopulation": 99773,
     "businessName": "Extreme Trades Electric & Lighting",
     "placeId": "ChIJFUTt0XRSO4gRlmByge0nNDU",
-    "googleMapsUri": "https://maps.google.com/?cid=3833733083831623830&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Winder",
-    "liveAddress": "706 Bo Parker Dr, Winder, GA 30680",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:05.930Z"
+    "liveAddress": "706 Bo Parker Dr, Winder, GA 30680"
   },
   {
     "countyIndex": 209,
@@ -330,13 +254,9 @@
     "sourcePopulation": 54291,
     "businessName": "Encore Electric",
     "placeId": "ChIJf_zuqZvDQYcR5agLr8WYWoU",
-    "googleMapsUri": "https://maps.google.com/?cid=9609160729761130725&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "countyRank": 5,
     "countyResultCount": 60,
     "city": "Eagle",
-    "liveAddress": "1353 Chambers Ave, Eagle, CO 81631",
-    "businessStatus": "OPERATIONAL",
-    "sourceMode": "TEXT_SEARCH_PRO_IDENTITY",
-    "observedAt": "2026-08-20T22:47:36.908Z"
+    "liveAddress": "1353 Chambers Ave, Eagle, CO 81631"
   }
 ]
