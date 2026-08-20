@@ -1,0 +1,74 @@
+name: AFY Batch Discovery
+
+on:
+  push:
+    paths:
+      - 'tools/afy-free-rank-gateway/batch-run-request.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: afy-batch-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Unit tests
+        run: node --test tools/afy-free-rank-gateway/batch-runner.test.mjs
+
+      - name: Run cost-safe batch discovery
+        id: batch
+        continue-on-error: true
+        run: node tools/afy-free-rank-gateway/batch-runner.mjs tools/afy-free-rank-gateway/batch-run-request.json
+
+      - name: Verify output exists and cost firewall metadata
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f tools/afy-free-rank-gateway/output/latest.json
+          test -f tools/afy-free-rank-gateway/output/summary.json
+          node - <<'NODE'
+          const fs = require('fs');
+          const p = 'tools/afy-free-rank-gateway/output/latest.json';
+          const d = JSON.parse(fs.readFileSync(p, 'utf8'));
+          if (d.costGuard?.expectedSourceMode !== 'TEXT_SEARCH_PRO_IDENTITY') throw new Error('bad source mode');
+          if (d.costGuard?.expectedSkuCeiling !== 'TEXT_SEARCH_PRO') throw new Error('bad sku ceiling');
+          if (d.costGuard?.enterpriseAllowed !== false) throw new Error('enterprise unexpectedly allowed');
+          if (!(Number(d.costGuard?.actualPageEvents) <= Number(d.costGuard?.maxPageEvents))) throw new Error('page-event cap exceeded');
+          NODE
+
+      - name: Persist results even if runner stopped on an error
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -d tools/afy-free-rank-gateway/output ]; then
+            git config user.name 'afy-batch-bot'
+            git config user.email 'hello@automaticforyou.com'
+            git add tools/afy-free-rank-gateway/output/
+            if ! git diff --cached --quiet; then
+              git commit -m 'AFY batch discovery output [skip ci]'
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
+
+      - name: Fail workflow if batch runner failed
+        if: steps.batch.outcome != 'success'
+        run: exit 1
