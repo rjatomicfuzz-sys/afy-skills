@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '22'
       - name: Chunk current batch output
-        run: node tools/afy-free-rank-gateway/chunk-output.mjs tools/afy-free-rank-gateway/output/latest.json tools/afy-free-rank-gateway/output/chunks 50
+        run: node tools/afy-free-rank-gateway/chunk-output.mjs tools/afy-free-rank-gateway/output/latest.json tools/afy-free-rank-gateway/output/chunks 20
       - name: Persist chunks
         run: |
           git config user.name 'afy-batch-bot'
