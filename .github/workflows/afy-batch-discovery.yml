@@ -16,7 +16,7 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,12 +31,12 @@ jobs:
       - name: Unit tests
         run: node --test tools/afy-free-rank-gateway/batch-runner.test.mjs
 
-      - name: Run cost-safe batch discovery
+      - name: Run quota-paced state-safe batch discovery
         id: batch
         continue-on-error: true
-        run: node tools/afy-free-rank-gateway/batch-runner.mjs tools/afy-free-rank-gateway/batch-run-request.json
+        run: node tools/afy-free-rank-gateway/safe-batch-runner.mjs tools/afy-free-rank-gateway/batch-run-request.json
 
-      - name: Verify output exists and cost firewall metadata
+      - name: Verify output exists and safety firewalls
         if: always()
         shell: bash
         run: |
@@ -51,6 +51,9 @@ jobs:
           if (d.costGuard?.expectedSkuCeiling !== 'TEXT_SEARCH_PRO') throw new Error('bad sku ceiling');
           if (d.costGuard?.enterpriseAllowed !== false) throw new Error('enterprise unexpectedly allowed');
           if (!(Number(d.costGuard?.actualPageEvents) <= Number(d.costGuard?.maxPageEvents))) throw new Error('page-event cap exceeded');
+          if (d.productionSafety?.stateAndCountyGuard !== true) throw new Error('state/county guard missing');
+          if (!(Number(d.productionSafety?.countyStartIntervalMs) >= 8000)) throw new Error('quota pacing too fast');
+          if (d.productionSafety?.enterpriseAllowed !== false) throw new Error('production safety allows enterprise');
           NODE
 
       - name: Persist results even if runner stopped on an error
