@@ -172,7 +172,10 @@ function resolveRepoPath(p) {
 
 export async function runBatch(requestPath) {
   const request = readJson(resolveRepoPath(requestPath));
-  const countyFile = resolveRepoPath(request.countyFile);
+  const countyFileSpecs = Array.isArray(request.countyFiles) && request.countyFiles.length
+    ? request.countyFiles
+    : [request.countyFile];
+  if (!countyFileSpecs[0]) throw new Error('COUNTY_FILE_REQUIRED');
   const outputFile = resolveRepoPath(request.outputFile || 'tools/afy-free-rank-gateway/output/latest.json');
   const summaryFile = resolveRepoPath(request.summaryFile || 'tools/afy-free-rank-gateway/output/summary.json');
   const gatewayBase = String(request.gatewayBase || 'https://afy-free-rank-gateway.vercel.app');
@@ -181,10 +184,21 @@ export async function runBatch(requestPath) {
   const concurrency = Math.min(5, Math.max(1, Number(request.concurrency || 3)));
   const skipStates = new Set(Array.isArray(request.skipStates) ? request.skipStates : []);
 
-  let counties = readJson(countyFile);
-  if (!Array.isArray(counties)) throw new Error('COUNTY_FILE_NOT_ARRAY');
+  let counties = [];
+  for (const countyFileSpec of countyFileSpecs) {
+    const block = readJson(resolveRepoPath(countyFileSpec));
+    if (!Array.isArray(block)) throw new Error(`COUNTY_FILE_NOT_ARRAY:${countyFileSpec}`);
+    counties.push(...block);
+  }
+  const uniqueCountyKeys = new Set();
   counties = counties
     .filter(c => c && !skipStates.has(c.state))
+    .filter(c => {
+      const key = `${Number(c.countyIndex)}|${c.state}|${c.county}`;
+      if (uniqueCountyKeys.has(key)) return false;
+      uniqueCountyKeys.add(key);
+      return true;
+    })
     .sort((a, b) => Number(b.population || 0) - Number(a.population || 0) || Number(a.countyIndex) - Number(b.countyIndex));
 
   const state = {
@@ -192,6 +206,7 @@ export async function runBatch(requestPath) {
     startedAt: new Date().toISOString(),
     completedAt: null,
     gatewayBase,
+    countyFiles: countyFileSpecs,
     costGuard: {
       expectedSourceMode: 'TEXT_SEARCH_PRO_IDENTITY',
       expectedSkuCeiling: 'TEXT_SEARCH_PRO',
