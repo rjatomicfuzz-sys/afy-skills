@@ -1,67 +1,145 @@
 {
   "runId": "AFY_BATCH_PRODUCTION_20260820_R1",
   "totalCandidates": 455,
-  "chunkSize": 50,
+  "chunkSize": 20,
   "chunks": [
     {
       "file": "candidates-001.json",
       "start": 1,
-      "end": 50,
-      "count": 50
+      "end": 20,
+      "count": 20
     },
     {
       "file": "candidates-002.json",
-      "start": 51,
-      "end": 100,
-      "count": 50
+      "start": 21,
+      "end": 40,
+      "count": 20
     },
     {
       "file": "candidates-003.json",
-      "start": 101,
-      "end": 150,
-      "count": 50
+      "start": 41,
+      "end": 60,
+      "count": 20
     },
     {
       "file": "candidates-004.json",
-      "start": 151,
-      "end": 200,
-      "count": 50
+      "start": 61,
+      "end": 80,
+      "count": 20
     },
     {
       "file": "candidates-005.json",
-      "start": 201,
-      "end": 250,
-      "count": 50
+      "start": 81,
+      "end": 100,
+      "count": 20
     },
     {
       "file": "candidates-006.json",
-      "start": 251,
-      "end": 300,
-      "count": 50
+      "start": 101,
+      "end": 120,
+      "count": 20
     },
     {
       "file": "candidates-007.json",
-      "start": 301,
-      "end": 350,
-      "count": 50
+      "start": 121,
+      "end": 140,
+      "count": 20
     },
     {
       "file": "candidates-008.json",
-      "start": 351,
-      "end": 400,
-      "count": 50
+      "start": 141,
+      "end": 160,
+      "count": 20
     },
     {
       "file": "candidates-009.json",
-      "start": 401,
-      "end": 450,
-      "count": 50
+      "start": 161,
+      "end": 180,
+      "count": 20
     },
     {
       "file": "candidates-010.json",
-      "start": 451,
+      "start": 181,
+      "end": 200,
+      "count": 20
+    },
+    {
+      "file": "candidates-011.json",
+      "start": 201,
+      "end": 220,
+      "count": 20
+    },
+    {
+      "file": "candidates-012.json",
+      "start": 221,
+      "end": 240,
+      "count": 20
+    },
+    {
+      "file": "candidates-013.json",
+      "start": 241,
+      "end": 260,
+      "count": 20
+    },
+    {
+      "file": "candidates-014.json",
+      "start": 261,
+      "end": 280,
+      "count": 20
+    },
+    {
+      "file": "candidates-015.json",
+      "start": 281,
+      "end": 300,
+      "count": 20
+    },
+    {
+      "file": "candidates-016.json",
+      "start": 301,
+      "end": 320,
+      "count": 20
+    },
+    {
+      "file": "candidates-017.json",
+      "start": 321,
+      "end": 340,
+      "count": 20
+    },
+    {
+      "file": "candidates-018.json",
+      "start": 341,
+      "end": 360,
+      "count": 20
+    },
+    {
+      "file": "candidates-019.json",
+      "start": 361,
+      "end": 380,
+      "count": 20
+    },
+    {
+      "file": "candidates-020.json",
+      "start": 381,
+      "end": 400,
+      "count": 20
+    },
+    {
+      "file": "candidates-021.json",
+      "start": 401,
+      "end": 420,
+      "count": 20
+    },
+    {
+      "file": "candidates-022.json",
+      "start": 421,
+      "end": 440,
+      "count": 20
+    },
+    {
+      "file": "candidates-023.json",
+      "start": 441,
       "end": 455,
-      "count": 5
+      "count": 15
     }
   ]
 }
