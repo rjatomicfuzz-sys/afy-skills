@@ -30,39 +30,38 @@ gcloud auth list --filter=status:ACTIVE --format="value(account)"
 
 echo
 echo "Enabling Places API + API Keys API..."
-gcloud services enable places.googleapis.com apikeys.googleapis.com --project="$GCP_PROJECT" --quiet
+gcloud services enable places.googleapis.com apikeys.googleapis.com --project="$GCP_PROJECT" --quiet >/dev/null 2>&1
 
-KEY_RESOURCE="$(gcloud services api-keys list --project="$GCP_PROJECT" --filter="displayName='$KEY_DISPLAY'" --format="value(name)" | head -n1)"
-
-if [[ -z "$KEY_RESOURCE" ]]; then
-  echo "Creating dedicated Places-only API key..."
-  gcloud services api-keys create \
-    --project="$GCP_PROJECT" \
-    --display-name="$KEY_DISPLAY" \
-    --api-target=service=places.googleapis.com \
-    --quiet >/dev/null
-
-  KEY_RESOURCE="$(gcloud services api-keys list --project="$GCP_PROJECT" --filter="displayName='$KEY_DISPLAY'" --format="value(name)" | head -n1)"
-else
-  echo "Dedicated API key already exists; re-applying Places-only restriction..."
-  gcloud services api-keys update "$KEY_RESOURCE" \
-    --project="$GCP_PROJECT" \
-    --api-target=service=places.googleapis.com \
-    --quiet >/dev/null
+# Rotate the dedicated key on every deploy. The old key may have appeared in terminal output.
+OLD_KEYS="$(gcloud services api-keys list --project="$GCP_PROJECT" --filter="displayName='$KEY_DISPLAY'" --format="value(name)")"
+if [[ -n "$OLD_KEYS" ]]; then
+  echo "Rotating dedicated Places-only key..."
+  while IFS= read -r key_resource; do
+    [[ -z "$key_resource" ]] && continue
+    gcloud services api-keys delete "$key_resource" --project="$GCP_PROJECT" --quiet >/dev/null 2>&1 || true
+  done <<< "$OLD_KEYS"
 fi
 
+echo "Creating fresh dedicated Places-only API key..."
+gcloud services api-keys create \
+  --project="$GCP_PROJECT" \
+  --display-name="$KEY_DISPLAY" \
+  --api-target=service=places.googleapis.com \
+  --quiet >/dev/null 2>&1
+
+KEY_RESOURCE="$(gcloud services api-keys list --project="$GCP_PROJECT" --filter="displayName='$KEY_DISPLAY'" --format="value(name)" | head -n1)"
 if [[ -z "$KEY_RESOURCE" ]]; then
-  echo "ERROR: could not locate API key resource after creation."
+  echo "ERROR: could not locate fresh API key resource after creation."
   exit 1
 fi
 
-KEY_STRING="$(gcloud services api-keys get-key-string "$KEY_RESOURCE" --project="$GCP_PROJECT" --format="value(keyString)")"
+KEY_STRING="$(gcloud services api-keys get-key-string "$KEY_RESOURCE" --project="$GCP_PROJECT" --format="value(keyString)" 2>/dev/null)"
 if [[ -z "$KEY_STRING" ]]; then
   echo "ERROR: could not retrieve API key string."
   exit 1
 fi
 
-echo "Google key ready and restricted to Places API. Secret will not be printed."
+echo "Fresh Google key ready and restricted to Places API. Secret not printed."
 
 rm -rf "$WORKDIR"
 git clone --depth 1 "$REPO_URL" "$WORKDIR" >/dev/null 2>&1
@@ -70,7 +69,7 @@ cd "$WORKDIR/tools/afy-free-rank-gateway"
 
 if ! npx --yes vercel@latest whoami >/dev/null 2>&1; then
   echo
-echo "Vercel login is required. Follow the prompt once."
+  echo "Vercel login is required. Follow the prompt once."
   npx --yes vercel@latest login
 fi
 
