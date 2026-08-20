@@ -9,7 +9,6 @@ function cleanQuery(value) {
 }
 
 function allowedQuery(q) {
-  // Deliberately narrow. This endpoint is only a free AFY electrician visibility census.
   return /^electrician in .{2,180}$/i.test(q);
 }
 
@@ -27,8 +26,6 @@ async function googlePage(apiKey, textQuery, pageToken) {
     headers: {
       'Content-Type': 'application/json',
       'X-Goog-Api-Key': apiKey,
-      // COST FIREWALL: never accept a client-supplied field mask.
-      // places.id + nextPageToken are Text Search Essentials (IDs Only).
       'X-Goog-FieldMask': FIELD_MASK
     },
     body: JSON.stringify(body)
@@ -40,32 +37,28 @@ async function googlePage(apiKey, textQuery, pageToken) {
   catch { data = { raw: text }; }
 
   if (!response.ok) {
-    const err = new Error(`Google Places ${response.status}`);
-    err.httpStatus = response.status;
-    err.googleBody = data;
-    throw err;
+    const error = new Error(`Google Places ${response.status}`);
+    error.httpStatus = response.status;
+    error.googleBody = data;
+    throw error;
   }
   return data;
 }
 
-export default async function handler(req, res) {
-  if (req.method !== 'GET') {
-    res.setHeader('Allow', 'GET');
-    return res.status(405).json({ ok: false, error: 'METHOD_NOT_ALLOWED' });
-  }
-
+export async function GET(request) {
   const apiKey = process.env.GOOGLE_MAPS_API_KEY;
   if (!apiKey) {
-    return res.status(500).json({ ok: false, error: 'GOOGLE_MAPS_API_KEY_MISSING' });
+    return Response.json({ ok: false, error: 'GOOGLE_MAPS_API_KEY_MISSING' }, { status: 500 });
   }
 
-  const q = cleanQuery(req.query?.q);
+  const url = new URL(request.url);
+  const q = cleanQuery(url.searchParams.get('q'));
   if (!q || !allowedQuery(q)) {
-    return res.status(400).json({
+    return Response.json({
       ok: false,
       error: 'INVALID_QUERY',
       requiredPattern: 'electrician in <town/county>, <state>'
-    });
+    }, { status: 400 });
   }
 
   try {
@@ -90,7 +83,7 @@ export default async function handler(req, res) {
       if (!token) break;
     }
 
-    return res.status(200).json({
+    return Response.json({
       ok: true,
       sourceMode: 'IDS_ONLY_FREE',
       billingFieldMask: FIELD_MASK,
@@ -102,14 +95,14 @@ export default async function handler(req, res) {
       exhaustedWithinGoogleLimit: !token,
       ranked,
       nextPageTokenAfterMaxPages: token || null
-    });
-  } catch (err) {
-    const status = Number(err?.httpStatus) || 502;
-    return res.status(status).json({
+    }, { headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } });
+  } catch (error) {
+    const status = Number(error?.httpStatus) || 502;
+    return Response.json({
       ok: false,
       error: 'GOOGLE_PLACES_ERROR',
-      googleHttpStatus: err?.httpStatus || null,
-      googleError: err?.googleBody || null
-    });
+      googleHttpStatus: error?.httpStatus || null,
+      googleError: error?.googleBody || null
+    }, { status });
   }
 }
