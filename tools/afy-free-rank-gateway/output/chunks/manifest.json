@@ -1,8 +1,9 @@
 {
-  "runId": "AFY_BATCH_PRODUCTION_20260820_R1",
-  "preGeoCandidates": 455,
-  "geoExcluded": 4,
-  "totalCandidates": 451,
+  "runId": "AFY_BATCH_PRODUCTION_20260820_R2",
+  "rowPrefix": "BATCH-R2",
+  "preGeoCandidates": 514,
+  "geoExcluded": 0,
+  "totalCandidates": 514,
   "chunkSize": 20,
   "sheetAll": "sheet-all.csv",
   "geoExcludedFile": "geo-excluded.json",
@@ -165,8 +166,29 @@
       "file": "candidates-023.json",
       "csvFile": "sheet-023.csv",
       "start": 441,
-      "end": 451,
-      "count": 11
+      "end": 460,
+      "count": 20
+    },
+    {
+      "file": "candidates-024.json",
+      "csvFile": "sheet-024.csv",
+      "start": 461,
+      "end": 480,
+      "count": 20
+    },
+    {
+      "file": "candidates-025.json",
+      "csvFile": "sheet-025.csv",
+      "start": 481,
+      "end": 500,
+      "count": 20
+    },
+    {
+      "file": "candidates-026.json",
+      "csvFile": "sheet-026.csv",
+      "start": 501,
+      "end": 514,
+      "count": 14
     }
   ]
 }
