@@ -1,0 +1,41 @@
+[
+  {
+    "countyIndex": 2679,
+    "fips": "56043",
+    "state": "Wyoming",
+    "sourceCounty": "Washakie",
+    "sourcePopulation": 7597,
+    "businessName": "BHB Electric",
+    "placeId": "ChIJX6vuxoZzS1MRomaJZMXyVbQ",
+    "countyRank": 1,
+    "countyResultCount": 7,
+    "city": "Worland",
+    "liveAddress": "1049D Rd 12, Worland, WY 82401"
+  },
+  {
+    "countyIndex": 638,
+    "fips": "19003",
+    "state": "Iowa",
+    "sourceCounty": "Adams",
+    "sourcePopulation": 3617,
+    "businessName": "Adams County Electrical Contracting",
+    "placeId": "ChIJu3ZymYNC64cROMtHwLKiKrU",
+    "countyRank": 1,
+    "countyResultCount": 4,
+    "city": "Corning",
+    "liveAddress": "607 Davis Ave, Corning, IA 50841"
+  },
+  {
+    "countyIndex": 9070,
+    "fips": "34027",
+    "state": "New Jersey",
+    "sourceCounty": "Morris",
+    "sourcePopulation": 0,
+    "businessName": "Esposito's Electric",
+    "placeId": "ChIJX2Ty7BEKw4kRnblE8kxL5tA",
+    "countyRank": 1,
+    "countyResultCount": 60,
+    "city": "Denville",
+    "liveAddress": "424 Franklin Ave, Denville, NJ 07834"
+  }
+]

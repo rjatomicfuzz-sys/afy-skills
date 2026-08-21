@@ -1,9 +1,9 @@
 {
-  "runId": "AFY_BATCH_PRODUCTION_20260820_R2",
-  "rowPrefix": "BATCH-R2",
-  "preGeoCandidates": 514,
+  "runId": "AFY_BATCH_PRODUCTION_20260821_R3",
+  "rowPrefix": "BATCH-R3",
+  "preGeoCandidates": 1463,
   "geoExcluded": 0,
-  "totalCandidates": 514,
+  "totalCandidates": 1463,
   "chunkSize": 20,
   "sheetAll": "sheet-all.csv",
   "geoExcludedFile": "geo-excluded.json",
@@ -187,8 +187,344 @@
       "file": "candidates-026.json",
       "csvFile": "sheet-026.csv",
       "start": 501,
-      "end": 514,
-      "count": 14
+      "end": 520,
+      "count": 20
+    },
+    {
+      "file": "candidates-027.json",
+      "csvFile": "sheet-027.csv",
+      "start": 521,
+      "end": 540,
+      "count": 20
+    },
+    {
+      "file": "candidates-028.json",
+      "csvFile": "sheet-028.csv",
+      "start": 541,
+      "end": 560,
+      "count": 20
+    },
+    {
+      "file": "candidates-029.json",
+      "csvFile": "sheet-029.csv",
+      "start": 561,
+      "end": 580,
+      "count": 20
+    },
+    {
+      "file": "candidates-030.json",
+      "csvFile": "sheet-030.csv",
+      "start": 581,
+      "end": 600,
+      "count": 20
+    },
+    {
+      "file": "candidates-031.json",
+      "csvFile": "sheet-031.csv",
+      "start": 601,
+      "end": 620,
+      "count": 20
+    },
+    {
+      "file": "candidates-032.json",
+      "csvFile": "sheet-032.csv",
+      "start": 621,
+      "end": 640,
+      "count": 20
+    },
+    {
+      "file": "candidates-033.json",
+      "csvFile": "sheet-033.csv",
+      "start": 641,
+      "end": 660,
+      "count": 20
+    },
+    {
+      "file": "candidates-034.json",
+      "csvFile": "sheet-034.csv",
+      "start": 661,
+      "end": 680,
+      "count": 20
+    },
+    {
+      "file": "candidates-035.json",
+      "csvFile": "sheet-035.csv",
+      "start": 681,
+      "end": 700,
+      "count": 20
+    },
+    {
+      "file": "candidates-036.json",
+      "csvFile": "sheet-036.csv",
+      "start": 701,
+      "end": 720,
+      "count": 20
+    },
+    {
+      "file": "candidates-037.json",
+      "csvFile": "sheet-037.csv",
+      "start": 721,
+      "end": 740,
+      "count": 20
+    },
+    {
+      "file": "candidates-038.json",
+      "csvFile": "sheet-038.csv",
+      "start": 741,
+      "end": 760,
+      "count": 20
+    },
+    {
+      "file": "candidates-039.json",
+      "csvFile": "sheet-039.csv",
+      "start": 761,
+      "end": 780,
+      "count": 20
+    },
+    {
+      "file": "candidates-040.json",
+      "csvFile": "sheet-040.csv",
+      "start": 781,
+      "end": 800,
+      "count": 20
+    },
+    {
+      "file": "candidates-041.json",
+      "csvFile": "sheet-041.csv",
+      "start": 801,
+      "end": 820,
+      "count": 20
+    },
+    {
+      "file": "candidates-042.json",
+      "csvFile": "sheet-042.csv",
+      "start": 821,
+      "end": 840,
+      "count": 20
+    },
+    {
+      "file": "candidates-043.json",
+      "csvFile": "sheet-043.csv",
+      "start": 841,
+      "end": 860,
+      "count": 20
+    },
+    {
+      "file": "candidates-044.json",
+      "csvFile": "sheet-044.csv",
+      "start": 861,
+      "end": 880,
+      "count": 20
+    },
+    {
+      "file": "candidates-045.json",
+      "csvFile": "sheet-045.csv",
+      "start": 881,
+      "end": 900,
+      "count": 20
+    },
+    {
+      "file": "candidates-046.json",
+      "csvFile": "sheet-046.csv",
+      "start": 901,
+      "end": 920,
+      "count": 20
+    },
+    {
+      "file": "candidates-047.json",
+      "csvFile": "sheet-047.csv",
+      "start": 921,
+      "end": 940,
+      "count": 20
+    },
+    {
+      "file": "candidates-048.json",
+      "csvFile": "sheet-048.csv",
+      "start": 941,
+      "end": 960,
+      "count": 20
+    },
+    {
+      "file": "candidates-049.json",
+      "csvFile": "sheet-049.csv",
+      "start": 961,
+      "end": 980,
+      "count": 20
+    },
+    {
+      "file": "candidates-050.json",
+      "csvFile": "sheet-050.csv",
+      "start": 981,
+      "end": 1000,
+      "count": 20
+    },
+    {
+      "file": "candidates-051.json",
+      "csvFile": "sheet-051.csv",
+      "start": 1001,
+      "end": 1020,
+      "count": 20
+    },
+    {
+      "file": "candidates-052.json",
+      "csvFile": "sheet-052.csv",
+      "start": 1021,
+      "end": 1040,
+      "count": 20
+    },
+    {
+      "file": "candidates-053.json",
+      "csvFile": "sheet-053.csv",
+      "start": 1041,
+      "end": 1060,
+      "count": 20
+    },
+    {
+      "file": "candidates-054.json",
+      "csvFile": "sheet-054.csv",
+      "start": 1061,
+      "end": 1080,
+      "count": 20
+    },
+    {
+      "file": "candidates-055.json",
+      "csvFile": "sheet-055.csv",
+      "start": 1081,
+      "end": 1100,
+      "count": 20
+    },
+    {
+      "file": "candidates-056.json",
+      "csvFile": "sheet-056.csv",
+      "start": 1101,
+      "end": 1120,
+      "count": 20
+    },
+    {
+      "file": "candidates-057.json",
+      "csvFile": "sheet-057.csv",
+      "start": 1121,
+      "end": 1140,
+      "count": 20
+    },
+    {
+      "file": "candidates-058.json",
+      "csvFile": "sheet-058.csv",
+      "start": 1141,
+      "end": 1160,
+      "count": 20
+    },
+    {
+      "file": "candidates-059.json",
+      "csvFile": "sheet-059.csv",
+      "start": 1161,
+      "end": 1180,
+      "count": 20
+    },
+    {
+      "file": "candidates-060.json",
+      "csvFile": "sheet-060.csv",
+      "start": 1181,
+      "end": 1200,
+      "count": 20
+    },
+    {
+      "file": "candidates-061.json",
+      "csvFile": "sheet-061.csv",
+      "start": 1201,
+      "end": 1220,
+      "count": 20
+    },
+    {
+      "file": "candidates-062.json",
+      "csvFile": "sheet-062.csv",
+      "start": 1221,
+      "end": 1240,
+      "count": 20
+    },
+    {
+      "file": "candidates-063.json",
+      "csvFile": "sheet-063.csv",
+      "start": 1241,
+      "end": 1260,
+      "count": 20
+    },
+    {
+      "file": "candidates-064.json",
+      "csvFile": "sheet-064.csv",
+      "start": 1261,
+      "end": 1280,
+      "count": 20
+    },
+    {
+      "file": "candidates-065.json",
+      "csvFile": "sheet-065.csv",
+      "start": 1281,
+      "end": 1300,
+      "count": 20
+    },
+    {
+      "file": "candidates-066.json",
+      "csvFile": "sheet-066.csv",
+      "start": 1301,
+      "end": 1320,
+      "count": 20
+    },
+    {
+      "file": "candidates-067.json",
+      "csvFile": "sheet-067.csv",
+      "start": 1321,
+      "end": 1340,
+      "count": 20
+    },
+    {
+      "file": "candidates-068.json",
+      "csvFile": "sheet-068.csv",
+      "start": 1341,
+      "end": 1360,
+      "count": 20
+    },
+    {
+      "file": "candidates-069.json",
+      "csvFile": "sheet-069.csv",
+      "start": 1361,
+      "end": 1380,
+      "count": 20
+    },
+    {
+      "file": "candidates-070.json",
+      "csvFile": "sheet-070.csv",
+      "start": 1381,
+      "end": 1400,
+      "count": 20
+    },
+    {
+      "file": "candidates-071.json",
+      "csvFile": "sheet-071.csv",
+      "start": 1401,
+      "end": 1420,
+      "count": 20
+    },
+    {
+      "file": "candidates-072.json",
+      "csvFile": "sheet-072.csv",
+      "start": 1421,
+      "end": 1440,
+      "count": 20
+    },
+    {
+      "file": "candidates-073.json",
+      "csvFile": "sheet-073.csv",
+      "start": 1441,
+      "end": 1460,
+      "count": 20
+    },
+    {
+      "file": "candidates-074.json",
+      "csvFile": "sheet-074.csv",
+      "start": 1461,
+      "end": 1463,
+      "count": 3
     }
   ]
 }
