@@ -1,9 +1,8 @@
 const GOOGLE_BASE = 'https://places.googleapis.com/v1/places/';
 
 // FINALIZER COST FIREWALL:
-// Known Place ID only. One Place Details request. No reviews/atmosphere fields.
-// The Enterprise fields below are intentionally locked because this endpoint is
-// only for candidates that already survived the free-first grinder.
+// This route can request paid Enterprise Place Details fields, so it is hard-disabled
+// by default. R2 grinders must use the free-first evidence path and /api/rank-ids.
 const FIELD_MASK = [
   'id',
   'displayName',
@@ -21,13 +20,25 @@ function cleanPlaceId(value) {
 }
 
 function allowedPlaceId(placeId) {
-  // Google Place IDs are opaque, but production IDs in this system use the
-  // standard ChIJ... form. Lock to a conservative URL-safe character set and
-  // sensible length; never accept URLs, paths, field masks, or search text.
   return /^ChIJ[A-Za-z0-9_-]{8,220}$/.test(placeId);
 }
 
 export async function GET(request) {
+  if (process.env.AFY_ENABLE_ENTERPRISE_FINALIZER !== 'true') {
+    return Response.json({
+      ok: false,
+      error: 'ENTERPRISE_FINALIZER_DISABLED',
+      enterpriseAllowed: false,
+      guidance: 'Use the free-first grinder evidence path and /api/rank-ids.'
+    }, {
+      status: 403,
+      headers: {
+        'Cache-Control': 'no-store',
+        'X-Content-Type-Options': 'nosniff'
+      }
+    });
+  }
+
   const apiKey = process.env.GOOGLE_MAPS_API_KEY;
   if (!apiKey) {
     return Response.json({ ok: false, error: 'GOOGLE_MAPS_API_KEY_MISSING' }, { status: 500 });
