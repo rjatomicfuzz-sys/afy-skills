@@ -27,6 +27,13 @@ function hasCorrectState(candidate) {
   return Boolean(expected && actual && expected === actual);
 }
 
+function batchRowPrefix(runId) {
+  const match = String(runId || '').match(/(?:^|_)R(\d+)$/i);
+  if (!match) throw new Error(`RUN_ID_ROUND_SUFFIX_REQUIRED:${runId || ''}`);
+  return `BATCH-R${Number(match[1])}`;
+}
+
+const rowPrefix = batchRowPrefix(data.runId);
 const preGeoCandidates = data.candidates.length;
 const geoExcludedRecords = data.candidates.filter(c => !hasCorrectState(c));
 const candidates = data.candidates.filter(hasCorrectState);
@@ -42,7 +49,7 @@ function csvCell(value) {
 
 function sheetRow(r, globalIndex) {
   return [
-    `BATCH-R1-${String(globalIndex).padStart(4,'0')}`,
+    `${rowPrefix}-${String(globalIndex).padStart(4,'0')}`,
     data.runId,
     r.countyIndex,
     `'${String(r.fips || '').padStart(5,'0')}`,
@@ -77,6 +84,7 @@ for (let i = 0; i < candidates.length; i += chunkSize) {
 fs.writeFileSync(path.join(outDir, 'sheet-all.csv'), allSheetRows.join('\n') + '\n');
 const manifest = {
   runId: data.runId,
+  rowPrefix,
   preGeoCandidates,
   geoExcluded: geoExcludedRecords.length,
   totalCandidates: candidates.length,
